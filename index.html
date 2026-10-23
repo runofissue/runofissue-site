@@ -94,6 +94,14 @@ h2{font-family:var(--serif);font-weight:700;font-size:clamp(30px,3.6vw,42px);lin
 .about p{color:var(--ink-2);margin:0 0 16px}
 .about p:last-child{margin-bottom:0}
 
+/* Team */
+.person{display:flex;align-items:center;gap:32px;max-width:760px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:32px;box-shadow:var(--shadow)}
+.person img{width:144px;height:144px;border-radius:50%;object-fit:cover;flex:0 0 auto;border:3px solid #fff;box-shadow:0 0 0 2px var(--accent-soft),0 6px 18px rgba(11,27,51,.12)}
+.person h3{font-family:var(--serif);font-size:24px;margin:0 0 2px;letter-spacing:-.01em}
+.person .role{font-size:14px;font-weight:600;color:var(--accent-dark);margin:0 0 12px}
+.person p{color:var(--ink-2);margin:0 0 14px;font-size:16px}
+.person .mail{font-weight:600;font-size:16px;color:var(--ink)}
+
 /* Contact */
 .contact{background:var(--ink);color:#fff;padding:96px 0;text-align:center}
 .contact h2{color:#fff}
@@ -114,6 +122,10 @@ footer a{color:var(--ink-2)}
   .caption{text-align:left}
   .about{grid-template-columns:1fr;gap:20px}
   .nav-links{display:none}
+}
+@media (max-width:560px){
+  .person{flex-direction:column;text-align:center;gap:20px;padding:28px 22px}
+  .person img{width:128px;height:128px}
 }
 @media (max-width:640px){
   body{font-size:16px}
@@ -259,6 +271,24 @@ footer a{color:var(--ink-2)}
     <div>
       <p>Run of Issue was founded by Aaron Palley, whose background is the sell side of programmatic advertising: working with publishers, Prebid, SSPs and DSPs. That means we speak the language of the readers these newsletters serve, and of the sponsors trying to reach them.</p>
       <p>We use AI for the research and legwork behind outreach, which lets a small team give each publication and each sponsor proper attention.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="team">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Who you'll work with</p>
+      <h2>One person, start to finish.</h2>
+    </div>
+    <div class="person">
+      <img src="aaron-palley.jpg" alt="Aaron Palley" width="144" height="144" loading="lazy" decoding="async">
+      <div>
+        <h3>Aaron Palley</h3>
+        <p class="role">Founder, Run of Issue</p>
+        <p>Aaron Palley runs Run of Issue. He works in ad tech and started Run of Issue to help independent newsletter writers earn more from sponsors without spending their time on sales.</p>
+        <a class="mail" href="mailto:aaron@runofissue.com">aaron@runofissue.com</a>
+      </div>
     </div>
   </div>
 </section>
